@@ -6,15 +6,16 @@ using System.Threading.Tasks;
 
 namespace HalilPazarlama
 {
-    internal class Program
+    public class Baslangic
     {
-        static void Main(string[] args)
+        public void Doldur(Depo d)
         {
-            Depo d = new Depo();
-
-            #region Doldur
-
-            CamasirMakinesi cm = new CamasirMakinesi("Ariston", "AR123", 11000, 7, true);
+            CamasirMakinesi cm = new CamasirMakinesi();
+            cm.Marka = "Ariston";
+            cm.Model = "AR123";
+            cm.Kurutma = true;
+            cm.yikamaKapasitesi = 7;
+            cm.Fiyat = 11000;
             d.Ekle(cm);
 
             BulasikMakinesi bm = new BulasikMakinesi();
@@ -24,10 +25,6 @@ namespace HalilPazarlama
             bm.EnerjiSinifi = "A++";
             bm.Fiyat = 5500;
             d.Ekle(bm);
-
-            #endregion
-
-            d.Listele();
         }
     }
 }
