@@ -10,13 +10,13 @@ namespace HalilPazarlama
     {
         public void Doldur(Depo d)
         {
-            CamasirMakinesi cm = new CamasirMakinesi();
-            cm.Marka = "Ariston";
-            cm.Model = "AR123";
-            cm.Kurutma = true;
-            cm.yikamaKapasitesi = 7;
-            cm.Fiyat = 11000;
-            d.Ekle(cm);
+            //CamasirMakinesi cm = new CamasirMakinesi();
+            //cm.Marka = "Ariston";
+            //cm.Model = "AR123";
+            //cm.Kurutma = true;
+            //cm.YikamaKapasitesi = 7;
+            //cm.Fiyat = 11000;
+            //d.Ekle(cm);
 
             BulasikMakinesi bm = new BulasikMakinesi();
             bm.Marka = "REGAL";

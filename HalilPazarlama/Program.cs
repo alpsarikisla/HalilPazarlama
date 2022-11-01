@@ -16,6 +16,7 @@ namespace HalilPazarlama
 
             CamasirMakinesi cm = new CamasirMakinesi("Ariston", "AR123", 11000, 7, true);
             d.Ekle(cm);
+            d.Ekle(new CamasirMakinesi("SIEMENS", "S123", 5000, 8, true));
 
             BulasikMakinesi bm = new BulasikMakinesi();
             bm.Marka = "REGAL";

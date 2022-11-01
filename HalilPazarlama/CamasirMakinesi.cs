@@ -25,6 +25,7 @@ namespace HalilPazarlama
 
         public string Yazdir()
         {
+            //return "Selam";
             return $"Marka={Marka} Model={Model}\nYıkama Kapasitesi={YikamaKapasitesi} Kurutma={Kurutma}\nFiyat={Fiyat}";
         }
     }
